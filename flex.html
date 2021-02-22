@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display FLex</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" type="text/css" href="../style.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://fontawesome.com/v4.7.0/icon">
+	<!-- <link rel="stylesheet" type="text/css" href="/public/uploadmovie.html"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="/public/error.html"> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-image:url(flex box/img/glasses.jpg;)
+  align-content: stretch;
+  height: 500px;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+}
+#item1{
+	flex-grow: 1; 
+	margin: 10px;}
+#item2{
+	flex-grow: 2;
+	margin: 10px;
+}
+#item3{
+	flex-grow: 3;
+	margin: 10px;
+	border: 10px;
+}
+#item4{
+	flex-grow: 4;
+	margin: 10px;
+	background-image: url(img/eye.jpg);
+	color: white;
+	font-weight: bolder;
+	fon
+}
+.a{
+	font-size:50px;
+	font-weight: bolder;
+	text-align: center;
+	border-style: solid;
+	background-image: url(img/lightning.jpg);
+	color:white;
+	font-family: sans-serif;
+}
+	
+	
+
+	</style>
+
+<h1 class="a">Flex Box css</h1>
+<div class="flex-container">
+  <div id="item1">
+  	<a><img src="img/joker.jpg" height="600" width="250"></a>
+  </div>
+  <div id="item2">
+  	<iframe width="250" height="600" src="https://www.youtube.com/embed/HfEVEGf1A8Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div id="item3">
+  	<div class="card" width="250" height="600">
+  <img src="img/leelly.jpg">
+  <div class="card-body">
+    <h4 class="card-title">Leelly</h4>
+    <p class="card-text">Plus Queen Model.Miss Curvy Curve 2021 finalist</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+  </div> 
+  <div id="item4">
+  	<form action="/action_page.php">
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" placeholder="Enter email" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+  </div>
+  <div class="form-group form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+</form>
+  </div>
+</div>
+</body>
+</html>
